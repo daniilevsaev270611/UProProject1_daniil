@@ -13,13 +13,13 @@ public class EnemyController : MonoBehaviour
 
 
     private IRobotMove robotEnemy;
-    private ITurretMove turretEnemy;
+    private ITurret turretEnemy;
     private IRobotMove komarEnemy;
 
     private void Start()
     {
         robotEnemy = _robot.GetComponent<IRobotMove>();
-        turretEnemy = _turret.GetComponent<IRobotMove>();
+        turretEnemy = _turret.GetComponent<ITurret>();
         komarEnemy = _komar.GetComponent<IRobotMove>();
     }
 
